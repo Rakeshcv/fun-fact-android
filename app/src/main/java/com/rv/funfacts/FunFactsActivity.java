@@ -46,14 +46,14 @@ public class FunFactsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String fact = mFactBook.getFact();
-                int color = mColorWheel.getColor();
+                mFact = mFactBook.getFact();
+                mColor = mColorWheel.getColor();
 
 
                 //Update the screen with our dynamic fact
-                mFactTextView.setText(fact);
-                mRelativeLayout.setBackgroundColor(color);
-                mShowFactButton.setTextColor(color);
+                mFactTextView.setText(mFact);
+                mRelativeLayout.setBackgroundColor(mColor);
+                mShowFactButton.setTextColor(mColor);
 
 
             }
