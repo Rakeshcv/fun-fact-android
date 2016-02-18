@@ -30,4 +30,8 @@ public class FactBook {
 
         return fact;
     }
+
+    public String getFact(int position){
+        return mFacts[position];
+    }
 }

@@ -37,4 +37,8 @@ public class ColorWheel {
 
         return colorAsInt;
     }
+
+    public int getColor(int position){
+        return Color.parseColor(mColors[position]);
+    }
 }
